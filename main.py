@@ -10,6 +10,10 @@ class Filme(BaseModel):
 
 filmes = []
 
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
+
 @app.post("/filmes")
 def adicionar_filme(filme: Filme):
     filmes.append(filme)
