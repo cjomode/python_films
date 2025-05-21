@@ -7,7 +7,7 @@ class Filme(BaseModel):
     titulo: str
     ano: int
     genero: str
-
+ 
 filmes = []
 
 @app.get("/")
